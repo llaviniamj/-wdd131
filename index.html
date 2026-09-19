@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 – Fundamentos da Web Dinâmica - Lavínia Morais de Jesus</title>
-    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica, Lavínia Morais de Jesus, desenvolvimento web, HTML, CSS, JavaScript, projeto de perfil profissional e recursos acadêmicos.">
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica, Lavínia Morais de Jesus, desenvolvimento web, HTML, CSS, JavaScript.">
     <meta name="author" content="Lavínia Morais de Jesus">
     
     <!-- Google Fonts -->
@@ -12,16 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- Estilos Externos -->
+    <!-- CSS Externe -->
     <link rel="stylesheet" href="estilos/base.css">
     
-    <!-- JavaScript com atributo defer -->
+    <!-- JS com defer -->
     <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
 
     <header>
-        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica - Lavinia Morais de Jesus</span>
+        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica - Lavínia Morais de Jesus</span>
         <nav>
             <a href="https://www.linkedin.com/in/laviniamj" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
@@ -34,16 +34,22 @@
         <h1>Lavínia Morais de Jesus</h1>
         
         <div class="grid-container">
+            <!-- Cartão 1: Sobre Mim -->
             <section class="card">
                 <h2>Sobre Mim</h2>
-                <img src="imagens/foto-perfil.webp" alt="Foto de perfil de Lavínia Morais de Jesus" width="200" height="200" loading="lazy">
-                <p>Olá! Meu nome é Lavínia Morais de Jesus. Sou estudante de Desenvolvimento de Software e instrutora de tecnologia. Apaixonada por programação, eletrônica e criação de soluções digitais dinâmicas e acessíveis.</p>
+                <div class="card-body sobre-body">
+                    <img src="imagens/foto-perfil.webp" alt="Foto de perfil de Lavínia Morais de Jesus" class="foto-perfil" loading="lazy">
+                    <p>Olá! Meu nome é Lavínia Morais de Jesus. Sou estudante de Desenvolvimento de Software e instrutora de tecnologia. Apaixonada por programação, eletrônica e criação de soluções digitais dinâmicas e acessíveis.</p>
+                </div>
             </section>
 
+            <!-- Cartão 2: Goiás, Brasil -->
             <section class="card">
                 <h2>Goiás, Brasil</h2>
-                <img src="imagens/goias.webp" alt="Imagem representativa do estado de Goiás" width="300" height="200" loading="lazy">
-                <p>Moro no estado de Goiás, no Brasil. Uma região rica em cultura, natureza exuberante e conhecida por sua hospitalidade e desenvolvimento em constantes expansão no setor tecnológico.</p>
+                <div class="card-body goias-body">
+                    <img src="imagens/goias.webp" alt="Imagem do estado de Goiás" class="foto-goias" loading="lazy">
+                    <p>Moro no estado de Goiás, no Brasil. Uma região rica em cultura, natureza exuberante e conhecida por sua hospitalidade e constante desenvolvimento na área tecnológica.</p>
+                </div>
             </section>
         </div>
     </main>
