@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Lavínia Morais de Jesus</title>
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica, Lavínia Morais de Jesus, desenvolvimento web, HTML, CSS, JavaScript, projeto de perfil profissional e recursos acadêmicos.">
+    <meta name="author" content="Lavínia Morais de Jesus">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos Externos -->
+    <link rel="stylesheet" href="estilos/base.css">
+    
+    <!-- JavaScript com atributo defer -->
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <h1>Lavinia Morais</h1>
-    
+
+    <header>
+        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7" target="_blank" rel="noopener">Escritura Favorita</a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Lavínia Morais de Jesus</h1>
+        
+        <div class="grid-container">
+            <section class="card">
+                <h2>Sobre Mim</h2>
+                <img src="imagens/foto-perfil.webp" alt="Foto de perfil de Lavínia Morais de Jesus" width="200" height="200" loading="lazy">
+                <p>Olá! Meu nome é Lavínia Morais de Jesus. Sou estudante de Desenvolvimento de Software e instrutora de tecnologia. Apaixonada por programação, eletrônica e criação de soluções digitais dinâmicas e acessíveis.</p>
+            </section>
+
+            <section class="card">
+                <h2>Goiás, Brasil</h2>
+                <img src="imagens/anapolis-goias.webp" alt="Imagem representativa do estado de Goiás" width="300" height="200" loading="lazy">
+                <p>Moro no estado de Goiás, no Brasil. Uma região rica em cultura, natureza exuberante e conhecida por sua hospitalidade e desenvolvimento em constantes expansão no setor tecnológico.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Lavínia Morais de Jesus | Goiás, Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
 </body>
 </html>
