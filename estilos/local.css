@@ -1,11 +1,10 @@
-/* Paleta de Cores em Tons Pastéis (Inspirada na Bandeira do Brasil) */
 :root {
-    --primary-color: #55a36c;      /* Verde Pastel / Suave */
-    --secondary-color: #fce38a;    /* Amarelo Manteiga / Pastel */
-    --accent-color: #639fab;       /* Azul Pastel Suave */
-    --background-color: #f8f9fa;   /* Off-white suave */
+    --primary-color: #55a36c;    
+    --secondary-color: #fce38a;    
+    --accent-color: #639fab;      
+    --background-color: #f8f9fa;  
     --card-background: rgba(255, 255, 255, 0.95);
-    --text-color: #2b2d42;         /* Escuro suave para contraste ideal de leitura */
+    --text-color: #2b2d42;        
     --font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +20,6 @@ body {
     color: var(--text-color);
 }
 
-/* Header com o Verde Pastel */
 header {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -35,7 +33,6 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* Layout Mobile */
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -49,7 +46,6 @@ header h1 {
     object-fit: cover;
 }
 
-/* Cards de Dados e Clima */
 .card {
     background-color: var(--card-background);
     padding: 1.5rem;
@@ -77,7 +73,6 @@ header h1 {
     color: #495057;
 }
 
-/* Ícone de Clima Mobile (SVG) */
 .weather-icon-mobile {
     display: block;
     margin: 0 auto 1rem auto;
@@ -85,7 +80,6 @@ header h1 {
     height: 60px;
 }
 
-/* Rodapé em Verde Pastel */
 footer {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -96,7 +90,6 @@ footer {
     border-top: 4px solid var(--secondary-color);
 }
 
-/* Visualização Ampla (Desktop) - Media Query */
 @media (min-width: 650px) {
     .hero-container {
         position: relative;
@@ -114,18 +107,15 @@ footer {
         object-position: center;
     }
 
-    /* Oculta ícone SVG no modo Desktop */
     .weather-icon-mobile {
         display: none;
     }
 
-    /* Pseudoelemento para o emoticon do clima correspondente no Desktop */
     .weather-title::after {
         content: " ⛅";
         font-size: 1.2rem;
     }
 
-    /* Cards em Overlay sobre a foto */
     .card {
         position: absolute;
         width: 290px;
