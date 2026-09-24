@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #a85d73;       
+    --secondary-color: #f7d6e0;     
+    --accent-color: #f2b5c4;        
+    --bg-color: #fff5f7;            
+    --card-bg: #ffffff;             
+    --header-bg: #fce4ec;           
+    --text-color: #3d2b30;          
+    --light-text: #ffffff;          
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+header, footer {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+footer {
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: none;
+}
+
+header h1, main h2 {
+    color: var(--primary-color);
+}
+
+#hamburger-btn {
+    color: var(--primary-color);
+}
+
+nav a {
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+figcaption {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}

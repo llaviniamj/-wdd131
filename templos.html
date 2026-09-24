@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo</title>
+    <meta name="description" content="Página de galeria de fotos de templos responsiva desenvolvida para a disciplina WDD 131.">
+    <meta name="author" content="Lavínia Morais de Jesus">
+    
+    <!-- Google Fonts: Montserrat e Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Folhas de Estilo (Mobile First) -->
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css" media="(min-width: 640px)">
+    
+    <!-- Script com adiamento -->
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Álbum do Templo</h1>
+            <button id="hamburger-btn" aria-label="Abrir menu de navegação">
+                <span class="open-icon">&#9776;</span>
+                <span class="close-icon" hidden>&times;</span>
+            </button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="#" class="active">Página Inicial</a></li>
+                <li><a href="#">Antigo</a></li>
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Grande</a></li>
+                <li><a href="#">Pequeno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galeria de Templos</h2>
+        <div class="gallery">
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/MANTI/1280x800/manti-temple-768119-main.jpg" alt="Templo de Manti Utah" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Manti Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/SALT/1280x800/salt-lake-temple-352882-main.jpg" alt="Templo de Salt Lake" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Salt Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/WASHINGTON/1280x800/washington-dc-temple-2018-main.jpg" alt="Templo de Washington D.C." loading="lazy" width="400" height="250">
+                <figcaption>Templo de Washington D.C.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/SAO/1280x800/sao-paulo-brazil-temple-1065664-main.jpg" alt="Templo de São Paulo Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de São Paulo Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/CUR/1280x800/curitiba-brazil-temple-1078732-main.jpg" alt="Templo de Curitiba Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Curitiba Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/REC/1280x800/recife-brazil-temple-1007205-main.jpg" alt="Templo de Recife Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Recife Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/FOR/1280x800/fortaleza-brazil-temple-2234084-main.jpg" alt="Templo de Fortaleza Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Fortaleza Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/RIO/1280x800/rio-de-janeiro-brazil-temple-2443026-main.jpg" alt="Templo do Rio de Janeiro Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo do Rio de Janeiro Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/PRO/1280x800/provo-utah-temple-1100371-main.jpg" alt="Templo de Provo Utah" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Provo Utah</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Lavínia Morais de Jesus | Goiás, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
