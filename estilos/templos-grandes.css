@@ -1,28 +1,24 @@
-@media (min-width: 640px) {
-    .header-container {
-        justify-content: center;
-    }
-
+@media (min-width: 650px) {
     #hamburger-btn {
-        display: none; 
+        display: none;
     }
 
     nav {
-        display: block !important; 
-        margin-top: 1rem;
+        display: block !important;
+        width: auto;
+        margin-top: 0;
     }
 
     nav ul {
         flex-direction: row;
-        justify-content: center;
         gap: 1rem;
     }
 
     nav a {
-        padding: 0.5rem 1.25rem;
+        background-color: transparent;
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
     }
 }
