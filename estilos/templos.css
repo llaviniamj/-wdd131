@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #8b4a5c;
+    --primary-color: #6d2e41;       
     --secondary-color: #f7d6e0;
-    --accent-color: #f2b5c4;
+    --accent-color: #a84260;       
     --bg-color: #fff5f7;
     --card-bg: #ffffff;
     --header-bg: #fce4ec;
@@ -53,14 +53,16 @@ nav {
 }
 
 nav.open {
-    display: block;
+    display: flex;                   
+    flex-direction: column;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex;                
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 nav a {
@@ -69,7 +71,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: var(--primary-color);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 4px;
     font-weight: 600;
 }
@@ -93,7 +95,7 @@ main h2 {
 }
 
 .gallery {
-    display: grid;
+    display: grid;                  
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
