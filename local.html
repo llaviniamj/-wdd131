@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil - Visão Geral do País</title>
+    <meta name="description" content="Página explicativa e estatística sobre o Brasil com dados demográficos e informações sobre o clima.">
+    <meta name="author" content="Lavínia Morais de Jesus">
+    <link rel="stylesheet" href="styles/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+
+    <main class="hero-container">
+        <!-- Imagem Responsiva usando <picture> com formato WebP -->
+        <picture class="hero-image">
+            <source srcset="images/hero-large.webp" media="(min-width: 650px)">
+            <img src="images/hero-small.webp" alt="Mapa da América do Sul com destaque para o Brasil" width="500" height="700">
+        </picture>
+
+        <!-- Seção de Dados (Data) -->
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 8,515,767 sq km</li>
+                <li><span>Population:</span> 203,062,512</li>
+                <li><span>Capital:</span> Brasília</li>
+                <li><span>Languages:</span> Portuguese</li>
+                <li><span>Currency:</span> Brazilian Real (BRL)</li>
+                <li><span>Time Zone:</span> UTC-3</li>
+                <li><span>Calling Code:</span> +55</li>
+                <li><span>Internet TLD:</span> .br</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Clima (Weather) - Alinhado com o clima do Brasil e condições para cálculo de sensação térmica -->
+        <section class="card weather-card">
+            <h2 class="weather-title">Weather</h2>
+            <!-- Ícone SVG para a visualização móvel (Sol com nuvem / Parcialmente Nublado) -->
+            <img src="images/weather.svg" alt="Ícone de tempo parcialmente nublado" class="weather-icon-mobile">
+            
+            <ul>
+                <li><span>Temperature:</span> <span id="temp">8</span> °C</li>
+                <li><span>Conditions:</span> Partly Cloudy</li>
+                <li><span>Wind:</span> <span id="wind">12</span> km/h</li>
+                <li><span>Wind Chill:</span> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Lavínia Morais de Jesus 🌸 Anápolis, Goiás, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
